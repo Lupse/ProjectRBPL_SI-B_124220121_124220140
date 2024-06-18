@@ -1,0 +1,30 @@
+@font-face {
+    font-family: title;
+    src: url('../asset/PPEiko-Medium.otf') format('OpenType');
+}
+
+@font-face {
+    font-family: text;
+    src: url('../asset/PPNeueMontreal-Medium.otf') format('OpenType');
+}
+
+:root{
+    --text: 'text', 'sans serif';
+    --title: 'title', 'sans serif';
+    --primary-color: #eeeeee;
+    --secondary-color: #F9B466;
+}
+
+body{
+    background-color: var(--primary-color);
+    margin:  0;
+    padding: 0; 
+}
+
+.kiri{
+    margin-left: 3em;
+}
+
+.kanan{
+    margin-right: 3em;
+}

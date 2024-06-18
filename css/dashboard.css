@@ -1,0 +1,129 @@
+
+@font-face {
+    font-family: title;
+    src: url('../asset/PPEiko-Medium.otf') format('OpenType');
+}
+
+@font-face {
+    font-family: text;
+    src: url('../asset/PPNeueMontreal-Medium.otf') format('OpenType');
+}
+
+:root{
+    --text: 'text', 'sans serif';
+    --title: 'title', 'sans serif';
+    --primary-color: #eeeeee;
+    --secondary-color: #F9B466;
+}
+
+body{
+    background-color: var(--primary-color);
+    margin:  0;
+    padding: 0;
+}
+
+/* NAVBAR */
+nav{
+    z-index: 1;
+    position: fixed;
+    background-color: var(--primary-color);
+    top: 0;
+    width: 100%;
+    height: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .kiri{
+    margin-left: 2em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+nav .kiri img{
+    z-index: 0;
+    width: 7em;
+    mix-blend-mode: multiply;
+}
+
+nav .kiri .title{
+    font-family: var(--title);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+
+nav .kanan{
+    display: flex;
+    gap: 2em;
+    margin-right: 3em;
+}
+
+nav .kanan a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--text);
+}
+
+/* CONTAINER */
+.content{
+    margin-top: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.content .absolute{
+    position: absolute;
+    width: 40%;
+    right: 0em;
+    border: 1em solid var(--secondary-color);
+    top: 12em;
+}
+
+.container{
+    margin-top: 3em;
+    background-color: white;
+    width: 90%;
+    height: 65vh;
+    padding: 2em ;
+    border-radius: 10px;
+}
+
+.container .title{
+    font-family: var(--title);
+    font-weight: 500;
+    font-size: 56px;
+}
+
+mark{
+    background-color: var(--secondary-color);
+    font-style: italic;
+}
+
+.container p{
+    font-family: var(--text);
+    width: 50%;
+}
+
+button{
+    border:1px solid #eeeeee;
+    margin-left: 1em;
+    margin-top: 7em;
+    background-color: var(--secondary-color);
+    font-family: var(--text);
+    padding: 1em 2em 1em 2em;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+
+}
+
+button:hover{
+    transition: all 0.5s ease;
+    background-color: white;
+    border:1px solid black;
+}
